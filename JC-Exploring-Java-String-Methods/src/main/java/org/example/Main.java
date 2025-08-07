@@ -3,15 +3,20 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        //Exercise 4: toUpperCase() and toLowerCase() - Changing Case
-        String mixedCase = "This Is A Test";
-        String upper = mixedCase.toUpperCase();
-        String lower = mixedCase.toLowerCase();
+        //Exercise 6: equals() vs. equalsIgnoreCase() - Comparing Strings
+        String str1 = "Java";
+        String str2 = "java";
+        String str3 = "Java";
 
-        System.out.println("Uppercase: " + upper);
-        System.out.println("Lowercase: " + lower);
+        boolean isEqual1 = str1.equals(str2);
+        boolean isEqual2 = str1.equals(str3);
+        boolean isEqualIgnoreCase = str1.equalsIgnoreCase(str2);
 
-        //Prediction: Uppercase: THIS IS A TEST \n Lowercase: this is a test
+        System.out.println("\"Java\".equals(\"java\"): " + isEqual1);
+        System.out.println("\"Java\".equals(\"Java\"): " + isEqual2);
+        System.out.println("\"Java\".equalsIgnoreCase(\"java\"): " + isEqualIgnoreCase);
+
+        //Prediction: "Java".equals("java"): false \n "Java".equals("Java"): true \n "Java".equalsIgnoresCase("java"): true
         //Actual:
     }
 }

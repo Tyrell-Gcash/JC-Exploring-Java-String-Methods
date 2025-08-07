@@ -3,20 +3,16 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        //Exercise 6: equals() vs. equalsIgnoreCase() - Comparing Strings
-        String str1 = "Java";
-        String str2 = "java";
-        String str3 = "Java";
+        //Exercise 8: trim() - Removing Whitespace
+        String padded = "   Lots of spaces   ";
+        String trimmed = padded.trim();
 
-        boolean isEqual1 = str1.equals(str2);
-        boolean isEqual2 = str1.equals(str3);
-        boolean isEqualIgnoreCase = str1.equalsIgnoreCase(str2);
+        System.out.println("Padded string length: " + padded.length());
+        System.out.println("Trimmed string: '" + trimmed + "'");
+        System.out.println("Trimmed string length: " + trimmed.length());
 
-        System.out.println("\"Java\".equals(\"java\"): " + isEqual1);
-        System.out.println("\"Java\".equals(\"Java\"): " + isEqual2);
-        System.out.println("\"Java\".equalsIgnoreCase(\"java\"): " + isEqualIgnoreCase);
 
-        //Prediction: "Java".equals("java"): false \n "Java".equals("Java"): true \n "Java".equalsIgnoresCase("java"): true
+        //Prediction: Padded string length: 20 \n Trimmed string: 'Lots of spaces' \n Trimmed string length: 14
         //Actual:
     }
 }
